@@ -1,0 +1,660 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html{
+  font-size: 100px;
+}
+body {
+  /* padding-bottom: 40px; */
+  background-color: #F5F8FA;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  font-family: PingFangSC-Semibold;
+}
+.h1 h1{
+  font-size: 0.58rem;
+}
+.h3 h3{
+  font-size: 0.4rem;
+}
+p{
+  font-family: PingFangSC-Regular;
+  font-size: 0.24rem;
+}
+.title{
+  color: rgba(50, 51, 51, 100);
+  font-size: 40px;
+  font-family: GreycliffCF-Medium;
+}
+.x-title{
+  color: rgba(50, 51, 51, 100);
+  font-size: 24px;
+  font-family: PingFangSC-Regular;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+/* .navbar-wrapper {
+  padding: 30px 0;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+} */
+
+.navbar-wrapper.header-scrolled {
+  /* color: black; */
+  background: white;
+  padding: 20px 0;
+  height: 72px;
+  transition: all 0.5s;
+  box-shadow: 0 4px 12px 0 rgba(52, 63, 75, .06), 0 10px 40px 0 rgba(52, 63, 75, .06), 0 0 0 1px rgba(52, 63, 75, .02);
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-inverse{
+  background-color: transparent;
+  border-color: transparent;
+  /* height: 156px; */
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a{
+  color: #ffffff;
+  font-size: 0.14rem;
+  font-family: PingFangSC-Semibold;
+  display: flex;
+  align-items: center;
+}
+/* 
+.jumbotron-box{
+  background: 
+  url(./static/bgc1@3x.png) 0 0 no-repeat,
+  url(./static/bgc2@3x.png) 0 0 no-repeat;
+  background-size: contain;
+} */
+.jumbotron-box{
+  background-color: transparent;
+}
+.jumbotron-box> .container{
+  /* height: 800px; */
+  color: #ffffff;
+  text-align: center;
+  padding-top: 147px;
+  text-align: center;
+}
+
+.jumbotron-box p{
+  font-size: 0.16rem;
+  margin-bottom: 8px;
+  font-family: PingFangSC-Semibold;
+}
+.jumbotron-box img{
+  width: 85%; 
+  padding-top: 12%;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+.values .container{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.values .container h3{
+  font-family: GreycliffCF-Medium;
+  color: #323333;
+}
+.values .col-lg-4{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.values .col-lg-4 .box {
+  width: 2.75rem;
+  height: 3.05rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 5px 20px 50px 0px rgba(0, 152, 255, 0.1);
+  text-align: center;
+  padding-top: 0.4rem;
+  margin: 0 auto;
+}
+.values h2 {
+  font-weight: normal;
+  font-size: 0.24rem;
+  margin-bottom: 18px;
+}
+.values .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 0.16rem;
+}
+.about{
+  /* margin-top: 0.8rem; */
+  background-color: #ffffff;
+}
+
+.about .line{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.about .line .bline{
+  width: 19px;
+  border-top: 3px solid rgba(0, 152, 255, 1);
+}
+.about .line .boll{
+  width: 11px;
+  height: 11px;
+  background-color: rgba(0, 152, 255, 1);
+}
+.about .line .aline{
+  width: 170px;
+  border-top: 1px solid #323333;
+}
+.about .container{
+  padding: 0;
+  margin: 0;
+}
+.about .left {
+  width: 90%;
+  height: 100%;
+  /* height: 7.04rem; */
+  padding: 80px 0;
+  background-color: #E6F5FF;
+  position: relative;
+}
+.about .right{
+  padding: 80px 10px;
+  background-color: #ffffff;
+}
+.about h1{
+  font-size: 0.4rem;
+  font-family: GreycliffCF-Medium;
+  margin-top: 0;
+}
+.about .text{
+  font-size: 0.16rem;
+  /* width: 5.5rem; */
+  /* height: 416px; */
+  line-height: 32px;
+  color: rgba(50, 51, 51, 100);
+  /* text-align: left; */
+  font-family: PingFangSC-Regular;
+}
+
+
+
+.solution .sol-items{
+  margin-top: 47px;
+}
+.solution .sol-item{
+  color: rgba(50, 51, 51, 100);
+  font-size: 16px;
+  text-align: left;
+  font-family: PingFangSC-Regular;
+  padding: 16px 5px;
+  display: flex;
+  align-items: center;
+}
+.solution .active{
+  width: 222px;
+  height: 54px;
+  color: #ffffff;
+  border-radius: 6px;
+  background-color: rgba(0, 152, 255, 1);
+  box-shadow: 3px 7px 8px 0px rgba(0, 152, 255, 0.13);
+}
+
+.solution .icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #49C700;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.solution .active .icon{
+  background-color: rgba(0, 152, 255, 1);
+}
+.solution .image{
+  background-color: #ffffff;
+  padding: 15px;
+}
+.solution .image .img-box{
+  background-color: #F4F7FA;
+  padding: 25px;
+}
+.solution .line{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.solution .line .bline{
+  width: 95px;
+  border-top: 3px solid rgba(0, 152, 255, 1);
+}
+.solution .line .boll{
+  width: 11px;
+  height: 11px;
+  background-color: rgba(0, 152, 255, 1);
+}
+.solution .line .aline{
+  width: 100px;
+  border-top: 1px solid #323333;
+}
+
+.honors .line, .join .line, .values .line{
+  width: 82px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+  margin: 0 auto;
+}
+.honors .line .bline, .join .bline, .values .bline{
+  width: 35px;
+  border-top: 1px solid #323333;
+}
+.honors .line .boll, .join .line .boll, .values .line .boll{
+  width: 11px;
+  height: 11px;
+  background-color: rgba(0, 152, 255, 1);
+}
+.honors .line .aline, .join .line .aline, .values .line .aline{
+  width: 35px;
+  border-top: 1px solid #323333;
+}
+.honors{
+  background-color: #ffffff;
+  margin: 0;
+}
+.honors .header{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.honors .images{
+  /* width: 80%; */
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 41px;
+  /* padding: 0 100px; */
+}
+.honors .img-item{
+  margin: 12px;
+  width: 304px;
+  height: 100%;
+}
+.honors .img-item img{
+  /* width: 30%; */
+  width: 304px;
+  height: 100%;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.carousel-inner{
+  height: 192px;
+  background-color: #F0F3F5;
+
+}
+.carousel .item,.carousel-caption{
+  height: 100%;
+  /* width: 100%; */
+  /* line-height: 192px; */
+}
+.carousel-indicators li{
+  width: 34px;
+  height: 4px;
+  border-radius: 2px;
+  border: none;
+  background-color: #D2D4D6;
+}
+.carousel-indicators .active{
+  width: 34px;
+  height: 4px;
+  border-radius: 2px;
+  border: none;
+  background-color: #0098FF;
+}
+.carousel .carousel-caption{
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.carousel .carousel-caption img{
+  margin-right: 50px;
+  display: inline-block;
+}
+
+
+.join .header{
+  text-align: center;
+  padding: 100px 0;
+}
+.join .btn{
+  width: 304px;
+  height: 86px;
+  line-height: 72px;
+  border-radius: 8px;
+  font-size: 40px;
+  color: #ffffff;
+  background-color: rgba(83, 202, 195, 1);
+  margin-top: 70px;
+}
+/* .join .btn img{
+  width: 210px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 1);
+} */
+.footer{
+  /* height: 446px; */
+  color: #ffffff;
+  background-color: rgba(0, 61, 102, 1);
+}
+.footer .row{
+  margin: 0;
+}
+.footer .container{
+  width: 100%;
+  padding: 0;
+}
+.footer .container p{
+  font-size: 14px;
+  color: #CDD9E0;
+  font-family: PingFangSC-Medium;
+  margin-bottom: 28px;
+}
+.footer .col-xs-12 div{
+  font-size: 12px;
+  font-family: PingFangSC-Regular;
+  margin-bottom: 20px;
+}
+.footer a, a:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/*  屏幕小于767的手机 */
+@media (max-width: 767px){
+.divider{
+  width: 60%;
+  border-top: 2px solid rgba(227, 230, 232, 1);
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 80px;
+}
+.carousel .item{
+  margin: 0 30px;
+}
+  .jumbotron-box{
+    background: 
+    url(./static/bgc1@3x.png) 0 -30px no-repeat,
+    url(./static/bgc2@3x.png) 0 -50px no-repeat;
+    background-size: cover;
+  } 
+   .jumbotron-box h1{
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  .jumbotron-box p{
+    font-size: 0.14rem;
+  }
+  .footer{
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 60px;
+  }
+  .footer hr{
+    margin-top: 40px;
+    margin-bottom: 28px;
+    border-top: 1px solid #0B446C;
+  }
+  .about .left {
+    width: 90%;
+    height: 600px;
+    /* height: 7.04rem; */
+    padding: 80px 0;
+    background-color: #E6F5FF;
+    position: relative;
+  }
+.about .img-jzjr{
+  width: 90%;
+  /* height: 220px; */
+  position: absolute;
+  right: -30px;
+  box-shadow: 5px 20px 50px 0px #E6F5FF;
+}
+  .solution{
+    padding: 120px 40px;
+    text-align: center;
+  }
+  
+.solution img{
+  width: 100%;
+  /* height: 310px; */
+}
+}
+/* 屏幕在768 到992之间的 iPad */
+@media (min-width: 768px) {
+  
+.divider{
+  width: 80%;
+  border-top: 2px solid rgba(227, 230, 232, 1);
+  margin: 0 auto;
+  margin-top: 98px;
+  margin-bottom: 140px;
+}
+  .carousel .item{
+    margin: 0 100px;
+  }
+  .jumbotron-box{
+    background: 
+    url(./static/bgc1@3x.png) 0 0 no-repeat,
+    url(./static/bgc2@3x.png) 0 0 no-repeat;
+    background-size: contain;
+  }
+  .footer{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+  }
+  .footer hr{
+    margin-top: 120px;
+    margin-bottom: 28px;
+    border-top: 1px solid #0B446C;
+  }
+  .footer .qrcode{
+    padding: 0;
+    text-align: right;
+  }
+  .navbar-wrapper .container {
+    width: 80%;
+  }
+  .jumbotron-box h1{
+    /* font-size: 0.58rem; */
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+  .navbar-nav>li>a{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.12rem;
+  }
+  .values .container h3{
+    font-size: 0.4rem;
+    font-family: GreycliffCF-Medium;
+  }
+  
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  .navbar-nav{
+    float: right;
+    color: #ffffff;
+  }
+
+
+  .about .row{
+    display: flex;
+  }
+  
+.about .img-jzjr{
+  width: 3.8rem;
+  height: 5.44rem;
+  /* width: 90%; */
+  position: absolute;
+  /* top: 0.8rem; */
+  /* left: 10%; */
+  right: -30px;
+  box-shadow: 5px 20px 50px 0px #E6F5FF;
+}
+
+.solution{
+  padding: 100px 80px;
+  
+}
+.solution .image{
+  width: 70%;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-top: 30px;
+  /* margin: 0 auto; */
+}
+.solution .image .img-box{
+  background-color: #F4F7FA;
+  padding: 22px;
+}
+.solution img{
+  width: 100%;
+  /* height: 394px; */
+}
+
+  .featurette-heading {
+    font-size: 0.5rem;
+  }
+}
+/* 屏幕大于 992 的 包括 iPad pro 电脑 */
+@media (min-width: 970px) {
+    .navbar-wrapper .container {
+    width: 70%;
+  }
+  .carousel .item{
+    margin: 0 160px;
+  }
+  .navbar-inverse .navbar-brand,
+  .navbar-inverse .navbar-nav>li>a{
+    font-size: 16px;
+  }
+  .footer{
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 60px;
+  }
+  .featurette-heading {
+    margin-top: 120px;
+  }
+  .jumbotron-box{
+    background: 
+    url(./static/bgc1@3x.png) 0 -30px no-repeat,
+    url(./static/bgc2@3x.png) 0 -50px no-repeat;
+    background-size: cover;
+  } 
+  .jumbotron-box h1{
+    font-size: 0.58rem;
+    margin-top: 40px;
+  }
+  .jumbotron-box p{
+    font-size: 0.24rem;
+  }
+  .navbar-nav>li>a{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.16rem;
+  }
+  .values .col-lg-4{
+    text-align: center;
+    /* margin-bottom: 20px; */
+  }
+  
+  .solution{
+    padding: 160px 80px;
+  }
+  .solution .image{
+    width: 100%;
+  }
+  .solution img{
+    width: 100%;
+    /* height: 394px; */
+  }
+}
+/* 屏幕大于 992 的 电脑 */
+@media (min-width: 1170px){
+  .container {
+    width: 80%;
+  }
+.values .col-lg-4 .box {
+  width: 2.95rem;
+  height: 3.25rem;
+}
+  .jumbotron-box img{
+    width: 85%; 
+    padding-top: 12%;
+  }
+  .carousel .item{
+    margin: 0 240px;
+  }
+  .footer{
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-top: 60px;
+  }
+  .honors .img-item img{
+    width: 304px;
+    height: 100%;
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+}
